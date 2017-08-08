@@ -8,56 +8,22 @@ SRI International
 
 Abstract 
 
-In this paper, it is argued that probability theory, when 
-used correctly, is suffrcient for the task of reasoning under 
-uncertainty. Since numerous authors have rejected probability 
-as inadequate for various reasons, the bulk of the 
-paper is aimed at refuting these claims and indicating the 
-scources of error. In particular, the definition of probability 
-as a measure of belief rather than a frequency ratio is advocated, 
-since a frequency interpretation of probability drastically 
-restricts the domain of applicability. Other sources 
-of error include the confusion between relative and absolute 
-probability, the distinction between probability and 
-the uncertainty of that probability. Also, the interaction 
-of logic and probability is discusses and it is argued that 
-many extensions of logic, such as "default logic" are better 
-understood in a probabilistic framework. The main claim 
-of this paper is that the numerous schemes for representing 
-and reasoning about uncertainty that have appeared in 
-the AI literature are unnecessary—probability is all that is 
-needed. 
+In this paper, it is argued that probability theory, when used correctly, is sufficient for the task of reasoning under uncertainty. 
+Since numerous authors have rejected probability as inadequate for various reasons, the bulk of the paper is aimed at refuting these claims and indicating the scources of error. In particular, the definition of probability as a measure of belief rather than a frequency ratio is advocated, since a frequency interpretation of probability drastically restricts the domain of applicability. 
+Other sources of error include the confusion between relative and absolute probability, the distinction between probability and the uncertainty of that probability. Also, the interaction of logic and probability is discusses and it is argued that many extensions of logic, such as "default logic" are better understood in a probabilistic framework. 
+The main claim of this paper is that the numerous schemes for representing and reasoning about uncertainty that have appeared in the AI literature are unnecessary—probability is all that is needed. 
 
  Introduction 
 
-A glance through any major AI publication shows that 
-an overwhelming proportion of papers are concerned with 
-what might be described as the logical approach to inference 
-and knowledge representation. It now widely accepted 
-that many knowledge representations can be mapped into 
-(first order) predicate calculus, and the corresponding inference 
-procedures can be reduced to a type of controlled 
-logical deduction. However, examples of human reasoning 
-(judgements) are full of such terms as "probably", "most", 
-"usually" etc., showing that many patterns of human reasoning 
-are not logical in form, but intrinsically probabilistic. 
+A glance through any major AI publication shows that an overwhelming proportion of papers are concerned with what might be described as the logical approach to inference and knowledge representation. 
+It now widely accepted that many knowledge representations can be mapped into (first order) predicate calculus, and the corresponding inference procedures can be reduced to a type of controlled logical deduction. 
+However, examples of human reasoning (judgements) are full of such terms as "probably", "most", "usually" etc., showing that many patterns of human reasoning are not logical in form, but intrinsically probabilistic. 
 
-The claim that many patterns of human reasoning are 
-probabilistic does not mean that the underlying "logic" of 
-such patterns cannot be axiomatized. On the contrary, a 
-basis for such an axiomatization is given in section 3. The 
-claim is that when such an exercise is performed, the resulting 
-patterns of inference are different in form from those 
-found in analogous logical deductions. A characteristic dif
-
-
-ference is that in probabilistic inference all the relevant 
-inference paths ("proofs") connecting the evidence to the 
-hypothesis of interest must be examined and "combined", 
-while in logic it is sufficient to establish a single path between 
-the axioms and the theorem of interest. Also, the 
-output is different, the former includes at least one numerical 
-measure, the latter simply true or false. 
+The claim that many patterns of human reasoning are probabilistic does not mean that the underlying "logic" of such patterns cannot be axiomatized. On the contrary, a basis for such an axiomatization is given in section 3. 
+The claim is that when such an exercise is performed, the resulting patterns of inference are different in form from those found in analogous logical deductions. 
+A characteristic difference is that in probabilistic inference all the relevant inference paths ("proofs") connecting the evidence to the hypothesis of interest must be examined and "combined", while in logic it is sufficient to establish a single path between 
+the axioms and the theorem of interest. 
+Also, the output is different, the former includes at least one numerical measure, the latter simply true or false. 
 
 Unfortunately, the logical style of reasoning is so prevalent 
 in AI that many have attempted to force intrinsically 
